@@ -108,7 +108,7 @@ public class EntryHolder extends RecyclerView.ViewHolder {
 
         _profileIssuer.setText(entry.getIssuer());
         _profileName.setText("");
-        if (showAccountName) {
+        if (showAccountName && !entry.getName().isEmpty()) {
             _profileName.setText(" - " + entry.getName());
         }
 
